@@ -9,6 +9,7 @@ import io.cucumber.java.pt.Quando;
 import pages.HomePage;
 import pages.ResultadoBuscaPage;
 
+
 import static core.DriverFactory.finalizaBrowser;
 import static core.DriverFactory.inicializaBrowser;
 import static org.junit.Assert.assertEquals;
