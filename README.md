@@ -13,5 +13,5 @@
 - Em "public static browsers browser = browsers.NavegadorDesejado;" modifique ".NavegadorDesejado" para o navegador que
   deseja
 
-#Como rodar os  testes (utilize a IDEA de sua escolha)
+# Como rodar os  testes (utilize a IDEA de sua escolha)
 - Execute os testes apartir da classe runner 
