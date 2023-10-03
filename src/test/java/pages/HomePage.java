@@ -1,15 +1,20 @@
 package pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import core.BasePage;
+import org.openqa.selenium.By;
 
-public class HomePage {
 
-    @FindBy(id= "search-open")
-    private WebElement searchOpen;
+public class HomePage extends BasePage {
 
-    public void acessarSearchOpen(){
-        searchOpen.isDisplayed();
-        searchOpen.click();
+    public void acessarSearchOpen() {
+        clickButton(By.id("search-open"));
+    }
+
+    public void digitarSearch(String textoPesquisa) {
+        sendText(By.className("search-field"), textoPesquisa);
+    }
+
+    public void clicarBotaoSearchSubmit() {
+        clickButton(By.className("search-submit"));
     }
 }
